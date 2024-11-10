@@ -1,0 +1,64 @@
+digraph G {
+    // Graph attributes
+    graph [
+        layout=fdp
+        bgcolor="#FFFFFF"
+        splines=true
+        overlap=false
+    ];
+
+    // Default node attributes
+    node [
+        shape=circle
+        style=filled
+        fillcolor="#1f77b4"
+        fontcolor="#000000"
+        width=0.277778
+    ];
+
+    // Default edge attributes
+    edge [
+        penwidth=1
+        color="#666666"
+        fontcolor="#000000"
+    ];
+
+    0 [label="0"];
+    1 [label="1"];
+    2 [label="2"];
+    3 [label="3"];
+    4 [label="4"];
+    5 [label="5"];
+    6 [label="6"];
+    7 [label="7"];
+    8 [label="8"];
+    9 [label="9"];
+    0 -> 2 [label="7"];
+    0 -> 3 [label="3"];
+    0 -> 4 [label="8"];
+    0 -> 6 [label="8"];
+    0 -> 8 [label="5"];
+    1 -> 6 [label="7"];
+    1 -> 8 [label="4"];
+    2 -> 7 [label="6"];
+    3 -> 0 [label="6"];
+    3 -> 6 [label="6"];
+    4 -> 1 [label="9"];
+    4 -> 5 [label="5"];
+    4 -> 7 [label="4"];
+    4 -> 9 [label="1"];
+    5 -> 2 [label="5"];
+    5 -> 4 [label="6"];
+    6 -> 4 [label="9"];
+    6 -> 9 [label="6"];
+    7 -> 0 [label="6"];
+    7 -> 2 [label="10"];
+    7 -> 4 [label="10"];
+    7 -> 8 [label="9"];
+    7 -> 9 [label="10"];
+    8 -> 7 [label="9"];
+    9 -> 1 [label="3"];
+    9 -> 4 [label="3"];
+    9 -> 5 [label="5"];
+    9 -> 6 [label="8"];
+}

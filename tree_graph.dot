@@ -1,0 +1,55 @@
+digraph G {
+    // Graph attributes
+    graph [
+        layout=dot
+        bgcolor="#FFFFFF"
+        splines=true
+        overlap=false
+    ];
+
+    // Default node attributes
+    node [
+        shape=circle
+        style=filled
+        fillcolor="#1f77b4"
+        fontcolor="#000000"
+        width=0.277778
+    ];
+
+    // Default edge attributes
+    edge [
+        penwidth=1
+        color="#666666"
+        fontcolor="#000000"
+    ];
+
+    0 [label="0"];
+    1 [label="1"];
+    2 [label="2"];
+    3 [label="3"];
+    4 [label="4"];
+    5 [label="5"];
+    6 [label="6"];
+    7 [label="7"];
+    8 [label="8"];
+    9 [label="9"];
+    10 [label="10"];
+    11 [label="11"];
+    12 [label="12"];
+    13 [label="13"];
+    14 [label="14"];
+    0 -> 1 [label="7", color="#b2004c"];
+    0 -> 2 [label="1", color="#1900e5"];
+    0 -> 3 [label="10", color="#ff0000"];
+    1 -> 4 [label="1", color="#1900e5"];
+    1 -> 5 [label="4", color="#660099"];
+    1 -> 6 [label="4", color="#660099"];
+    2 -> 7 [label="9", color="#e50019"];
+    2 -> 8 [label="8", color="#cc0032"];
+    2 -> 9 [label="7", color="#b2004c"];
+    3 -> 10 [label="6", color="#990066"];
+    3 -> 11 [label="5", color="#7f007f"];
+    3 -> 12 [label="2", color="#3300cc"];
+    4 -> 13 [label="6", color="#990066"];
+    4 -> 14 [label="10", color="#ff0000"];
+}

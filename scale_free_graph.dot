@@ -1,0 +1,80 @@
+digraph G {
+    // Graph attributes
+    graph [
+        layout=circo
+        bgcolor="#FFFFFF"
+        splines=true
+        overlap=false
+    ];
+
+    // Default node attributes
+    node [
+        shape=circle
+        style=filled
+        fillcolor="#1f77b4"
+        fontcolor="#000000"
+        width=0.277778
+    ];
+
+    // Default edge attributes
+    edge [
+        penwidth=1
+        color="#666666"
+        fontcolor="#000000"
+    ];
+
+    0 [label="0"];
+    1 [label="1"];
+    2 [label="2"];
+    3 [label="3"];
+    4 [label="4"];
+    5 [label="5"];
+    6 [label="6"];
+    7 [label="7"];
+    8 [label="8"];
+    9 [label="9"];
+    10 [label="10"];
+    11 [label="11"];
+    12 [label="12"];
+    13 [label="13"];
+    14 [label="14"];
+    1 -> 0 [label="8", color="#cc0032"];
+    2 -> 0 [label="5", color="#7f007f"];
+    2 -> 1 [label="2", color="#3300cc"];
+    3 -> 2 [label="4", color="#660099"];
+    3 -> 1 [label="6", color="#990066"];
+    3 -> 0 [label="4", color="#660099"];
+    4 -> 2 [label="3", color="#4c00b2"];
+    4 -> 2 [label="6", color="#990066"];
+    4 -> 2 [label="8", color="#cc0032"];
+    5 -> 1 [label="2", color="#3300cc"];
+    5 -> 1 [label="9", color="#e50019"];
+    5 -> 3 [label="4", color="#660099"];
+    6 -> 0 [label="4", color="#660099"];
+    6 -> 1 [label="8", color="#cc0032"];
+    6 -> 4 [label="1", color="#1900e5"];
+    7 -> 6 [label="5", color="#7f007f"];
+    7 -> 2 [label="9", color="#e50019"];
+    7 -> 6 [label="3", color="#4c00b2"];
+    8 -> 3 [label="10", color="#ff0000"];
+    8 -> 1 [label="10", color="#ff0000"];
+    8 -> 1 [label="2", color="#3300cc"];
+    9 -> 7 [label="5", color="#7f007f"];
+    9 -> 2 [label="9", color="#e50019"];
+    9 -> 4 [label="6", color="#990066"];
+    10 -> 3 [label="4", color="#660099"];
+    10 -> 1 [label="10", color="#ff0000"];
+    10 -> 6 [label="9", color="#e50019"];
+    11 -> 4 [label="5", color="#7f007f"];
+    11 -> 0 [label="1", color="#1900e5"];
+    11 -> 4 [label="1", color="#1900e5"];
+    12 -> 5 [label="9", color="#e50019"];
+    12 -> 2 [label="1", color="#1900e5"];
+    12 -> 6 [label="10", color="#ff0000"];
+    13 -> 2 [label="7", color="#b2004c"];
+    13 -> 3 [label="6", color="#990066"];
+    13 -> 5 [label="6", color="#990066"];
+    14 -> 8 [label="6", color="#990066"];
+    14 -> 6 [label="2", color="#3300cc"];
+    14 -> 10 [label="10", color="#ff0000"];
+}
